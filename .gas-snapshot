@@ -1,0 +1,5 @@
+TestSwapperPlugin:testFailSwapEtherToToken() (gas: 147262)
+TestSwapperPlugin:testSwapEtherToToken() (gas: 129260)
+TestSwapperPlugin:testUpdatePlugin() (gas: 17950)
+TestSwapperUUPS:testSwapEtherToToken() (gas: 132605)
+TestSwapperUUPS:testUpgradeUUPS() (gas: 23196)

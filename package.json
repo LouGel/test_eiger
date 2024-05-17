@@ -1,0 +1,20 @@
+{
+  "name": "test_eiger",
+  "version": "1.0.0",
+  "description": "SI tu veux deploy sans issue --> run predeployEverything. Tu aura : Le token mintes sur le deployer , tu pourra te les envoyer en addant les addresses des tokens deploye sur localhost. Le chainId pour metamask c'est 31337 btw (regarde dans metamask) et en sendant Oublie pas de bien reboot les nonce sur mmask quand tu arrete anvil et de relancer le script. Normalement les soledes sont remis en l'etat et les addresses les memes.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@openzeppelin/contracts-upgradeable": "^5.0.2",
+    "@uniswap/v3-periphery": "^1.4.4"
+  }
+}
