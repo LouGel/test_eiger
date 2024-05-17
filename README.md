@@ -11,9 +11,6 @@ This repository contains two smart contract implementations for swapping Ether t
 - [Deployment and Gas Costs](#deployment-and-gas-costs)
   - [UUPS Swapper](#uups-swapper)
   - [Plugin Swapper](#plugin-swapper)
-- [Usage](#usage)
-- [Testing](#testing)
-- [License](#license)
 
 ## Introduction
 
