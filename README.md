@@ -11,6 +11,7 @@ This repository contains two smart contract implementations for swapping Ether t
 - [Deployment and Gas Costs](#deployment-and-gas-costs)
   - [UUPS Swapper](#uups-swapper)
   - [Plugin Swapper](#plugin-swapper)
+- [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -46,3 +47,9 @@ The Plugin Swapper contract separates the swap logic into a plugin contract, whi
 4. **Upgrade Call (without considering new implementation)**: ~`17,950` gas
 
 The main difference in gas costs for swaps is due to the UUPS Swapper relying on variables, while the Plugin Swapper uses constants and immutables, which are optimized at compile time.
+
+## Conclusion
+
+Different approaches can be taken when designing upgradeable contracts. The UUPS (Universal Upgradeable Proxy Standard) pattern is commonly used due to its flexibility and ease of use. However, using a full proxy can present security issues, such as the potential approval of an unintended contract.
+
+Alternatively, the plugin pattern can be beneficial if only one or two functions require upgradability. However, it lacks the flexibility and comprehensive upgrade capabilities that the UUPS pattern offers
